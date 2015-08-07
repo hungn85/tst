@@ -1,0 +1,17 @@
+.custom{
+	background-color: #fdfdfd;
+	  border: 1px solid #E4E4E4;
+}
+.custom label{
+	display: block;
+}
+.demo_widget{
+	background-color: #f1f1f1;
+	border-radius: 3px;
+}
+.popup{
+background-color: #fafafa;
+}
+#widget_popup{
+display: none;
+}

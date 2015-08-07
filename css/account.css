@@ -1,0 +1,65 @@
+.account_info{
+    background-color: #f0f0f0; /* layer fill content */
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+}
+.sm_avatar{
+    width: 27px;
+    height: 27px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; /* border radius */
+    margin-right: 7px;
+    border: 1px solid #fafafa;
+}
+.md_avatar{
+    background-color: #6a6a6a; /* layer fill content */
+    -moz-box-shadow: 0 0 5px rgba(42,42,42,.1); /* outer glow */
+    -webkit-box-shadow: 0 0 5px rgba(42,42,42,.1); /* outer glow */
+    box-shadow: 0 0 5px rgba(42,42,42,.1); /* outer glow */
+    border: 3px solid #fafafa;
+    width: 100%;
+}
+.avatar{
+    /*width: 145px;
+    height: 145px;*/
+    position: relative;
+    margin: 0 auto;
+}
+.logout{font-size: 11px;}
+.account>li.active>a, .account>li.active>a:hover, .account>li.active>a:focus{
+    border-bottom: 3px solid #0288d1;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.account>li>a:hover {
+    background: none;
+    border: 1px solid transparent;
+}
+.giaodich_content{font-size: 12px;}
+.giaodich_content thead tr{
+    background-color: #d4d4d4;
+}
+.giaodich{margin-top: 10px;}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{padding: 8px 5px};
+.snap_ava{
+    position: absolute;
+    bottom: 5px;
+    z-index: 20;
+    right: 5px;
+    cursor: pointer;
+}
+.suathongtin, .suathongtin label{padding: 5px;}
+.suathongtin hr {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #e8e8e8;
+}
+.add_text{
+    font-size: 12px;
+    float: right;
+}
+.money{width: 150px;}

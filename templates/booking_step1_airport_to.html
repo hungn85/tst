@@ -1,0 +1,47 @@
+{% extends "layout.html"%}
+{% block login_remind %}{% include '_booking_login_remind.html' %}{% endblock%}
+{% block booking_step %}{% include '_booking_step.html' %}{% endblock%}
+{% block body %}
+<link href="/css/brand.css" rel="stylesheet">
+<div class="white_bg">
+    <div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="addition_text">Thông tin chuyến đi đã đặt</h4>				
+				{% include '_booking_step1_log.html' %}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="white_bg box_md">
+    <div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			<h4 class="addition_text">{{translate('Đặt xe tại sân bay đến')}}</h4>
+			</div>
+		</div>
+        <div class="row">
+            <div class="col-md-6">
+			{% include '_booking_step1_booking_form_option.html' %}			
+            </div>
+            <div class="col-md-6">                
+			{% include '_booking_step1_map.html' %}
+            </div>
+        </div>
+        {% include '_booking_step1_selected_taxi.html' %}
+		{% include '_booking_step2_flight.html' %}
+        {% include '_booking_step1_add_address.html' %}
+		{% include '_booking_step1_name_banner.html' %}
+		{% include '_booking_step1_go_back.html' %}
+		{% include '_booking_step1_booking_regularly.html' %}
+		{% include '_booking_step1_balance.html' %}
+        <div class="row padding_top">
+            <div class="col-md-offset-8 col-md-4">
+                <button class="btn btn_blue btn_lg">{{translate('Tiếp tục')}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% include '_brand_detail_modal.html' %}
+{% endblock %} 
+{% block test%}Đặt xe{% endblock %}

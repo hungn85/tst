@@ -1,0 +1,34 @@
+{% extends "layout.html"%}
+{% block body %}
+<div><img src="img/promotion.jpg" width="100%"></div>
+<div class="gray_bg box_xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Bạn chưa đăng nhập !</h4>
+                <p>- Để thực hiện chức năng mời bạn bè bạn cần phải đăng nhập hoặc đăng kí</p>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6 box_md">
+                        <button class="btn btn_blue btn_sm">Đăng nhập</button>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 box_md">
+                        <button class="btn btn_orange btn_sm">Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="white_bg box_xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="hightlight">Bạn chưa có lời mời bạn bè nào</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
+{% block test%}{{translate('Đặt xe')}}{% endblock %}

@@ -1,0 +1,10 @@
+.khuyenmai .timkiem{
+    background-color: #4b4b4b;
+}
+.khuyenmai .timkiem h4{
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.khuyenmai table, .khuyenmai table>thead>tr>th{
+    text-align: center;
+}

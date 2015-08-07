@@ -1,0 +1,30 @@
+{% extends "layout.html"%}
+{% block body %}
+<div class="white_bg box_md">
+    <div class="container">
+		<div class="row">
+			<div class="col-md-12">
+                {% include '_booking_step2_customer_info.html' %}
+				<div class="row"><hr/></div>
+                {% include '_booking_step2_payment.html' %}
+				<!--<div class="row"><hr/></div>
+                {% include '_booking_step2_verify.html' %}
+                <div class="row padding_top">
+					<label for="customer_form_term">
+						<input type="checkbox" name="customer_form[term]"  id="customer_form_term"> {{translate('Tôi đồng ý với')}} <a href="">{{translate('Chính sách vận chuyển')}}</a> {{translate('của')}} dichungtaxi.com
+					</label>
+                </div>-->
+            </div>
+		</div>
+        <div class="row padding_top">		
+			<div class="col-md-12 text-center padding_top">
+				<p>Bấm <strong>thanh toán</strong> đồng nghĩa với việc bạn đã đồng ý với <a>Chính sách vận chuyển</a> của dichungtaxi.com</p>
+			</div>
+            <div class="col-md-offset-4 col-md-4">
+                <button class="btn btn_blue btn_lg">{{translate('Thanh toán')}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
+{% block test%}Đặt xe{% endblock %}

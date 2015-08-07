@@ -1,0 +1,29 @@
+{% extends "layout.html"%}
+{% block body %}
+<link href="css/blog.css" rel="stylesheet">
+	{% include '_blog_menu.html'%} 
+	<div class="box_sm">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="blog_bg">
+						<div class="col-md-12 box_xs">
+							<h4 class="text-uppercase"><a>Tiêu đề</a></h4>
+							<p class="text-uppercase"><small>Thứ 2, 22/6/2015</small></p>
+							<p><a><span class="like_fb"></span></a> <a><span class="share_fb"></span></a><p>							
+						</div>
+						<div class="col-md-12">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+						</div>
+						<div class="clear"></div>
+						<div class="tag">
+							<p>Tags: <a>Lorem ipsum</a><a>dolor sit</a><a>amet</a><a>Lorem ipsum</a><a>dolor sit</a><a>amet</a><a>Lorem ipsum</a><a>dolor sit</a><a>amet</a><a>Lorem ipsum</a><a>dolor sit</a><a>amet</a><a>Lorem ipsum</a><a>dolor sit</a><a>amet</a><a>Lorem ipsum</a><a>dolor sit</a><a>amet</a><a>Lorem ipsum</a><a>dolor sit</a><a>amet</a></p>
+						</div>
+					</div>
+				</div>
+				{% include '_blog_recent.html'%} 
+			</div>
+		</div>
+	</div>
+{% endblock %} 
+{% block test%}Trang chủ{% endblock %}

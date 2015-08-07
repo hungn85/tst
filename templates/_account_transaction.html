@@ -1,0 +1,86 @@
+<table class="table table-striped giaodich_content">
+                    <thead>
+                    <tr>
+                        <th>Mã vé</th>
+                        <th>Loại xe</th>
+                        <th>Hình thức</th>
+                        <th>Địa chỉ đón khách</th>
+                        <th>Thời gian</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th>Tiết kiệm</th>
+                        <th>CO2 xả thải (kg)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>{% include '_account_transaction_infor.html' %}</tr>
+                    <tr>{% include '_account_transaction_infor.html' %}</tr>
+                    <tr>{% include '_account_transaction_infor.html' %}</tr>
+                    </tbody>
+					<tr>
+						<th>Tổng</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>200.000Đ</th>
+                        <th>80.000Đ</th>
+                        <th>12kg</th>
+					</tr>
+                </table>
+				<label for="booking_step1_balance"><input type="checkbox" value="balance" name="booking_step1[balance]"  id="booking_step1_balance"> Tôi muốn sử dụng dịch vụ trung hòa khí thải.</label>
+				<div class="col-md-12 box_sm balance_display">
+						<div class="col-md-4">
+							<div class="balance">
+								<div><label for="booking_step1_service1"><input type="checkbox" value="dichvu1" name="booking_step1[service1]"  id="booking_step1_service1"> Tôi đồng ý sử dụng dịch vụ 1.</label></div>
+								<div class="dichvu1">
+									<div class="costs recommend">
+										<label for="booking_step1_service1_1"><input type="radio" name="booking_step1[service1_1]"  id="booking_step1_service1_1"> 500.000Đ</label>
+									</div>
+									<div class="costs">
+										<label for="booking_step1_service1_2"><input type="radio" name="booking_step1[service1_1]"  id="booking_step1_service1_2"> 200.000Đ</label>
+									</div>
+									<div class="costs">
+									<label for="booking_step1_service1_3"><input type="radio" name="booking_step1[service1_1]"  id="booking_step1_service1_3"> <input type="text" class="text-right money"/> Đ</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="balance">
+								<div><label for="booking_step1_service2"><input type="checkbox" value="dichvu2" name="booking_step1[service2]"  id="booking_step1_service2"> Tôi đồng ý sử dụng dịch vụ 2.</label></div>
+								<div class="dichvu2">
+									<div class="costs recommend">
+										<label for="booking_step1_service2_1"><input type="radio" name="booking_step1[service2_2]"  id="booking_step1_service2_1"> 500.000Đ</label>
+									</div>
+									<div class="costs">
+										<label for="booking_step1_service2_2"><input type="radio" name="booking_step1[service2_2]"  id="booking_step1_service2_2"> 200.000Đ</label>
+									</div>
+									<div class="costs">
+									<label for="booking_step1_service2_3"><input type="radio" name="booking_step1[service2_2]"  id="booking_step1_service2_3"> <input type="text" class="text-right money"/> Đ</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="balance">
+								<div><label for="booking_step1_service3"><input type="checkbox" value="dichvu3" name="booking_step1[service3]"  id="booking_step1_service3"> Tôi đồng ý sử dụng dịch vụ 3.</label></div>
+								<div class="dichvu3">
+									<div class="costs recommend">
+										<label for="booking_step1_service3_1"><input type="radio" name="booking_step1[service3_3]"  id="booking_step1_service3_1"> 500.000Đ</label>
+									</div>
+									<div class="costs">
+										<label for="booking_step1_service3_2"><input type="radio" name="booking_step1[service3_3]"  id="booking_step1_service3_2"> 200.000Đ</label>
+									</div>
+									<div class="costs">
+									<label for="booking_step1_service3_3"><input type="radio" name="booking_step1[service3_3]"  id="booking_step1_service3_3"> <input type="text" class="text-right money"/> Đ</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="clear:both"></div>
+						<div class="col-md-offset-8 col-md-4 box_sm">
+							<a class="btn btn_blue">Thực hiện</a>
+						</div>
+				</div>

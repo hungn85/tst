@@ -1,0 +1,42 @@
+{% extends "layout.html"%}
+{% block login_remind %}{% endblock%}
+{% block booking_step %}{% endblock%}
+{% block body %}
+    <link rel="stylesheet" href="css/account.css">
+	
+<div class="white_bg">
+    <div class="container box_md">
+        <div class="row">
+            <div class="col-md-3">
+                {% include '_account_user_infor.html' %}
+            </div>
+            <div class="col-md-9">
+            <ul class="nav nav-tabs account">
+				<li class="col-md-offset-3 active"><a href="#thongtin" data-toggle="tab">{{translate('Thay đổi thông tin')}}</a></li>
+                <li><a href="#giaodich" data-toggle="tab">{{translate('Giao dịch')}}</a></li>
+                <li><a href="#balance" data-toggle="tab">{{translate('Sổ tay trung hòa khí thải')}}</a></li>
+            </ul>
+            <div class="tab-content giaodich">			
+            <div id="thongtin" class="tab-pane table-responsive active">
+                <div class="row">
+                    {% include '_account_user_infor_edit.html' %}
+                    {% include '_account_bank_account_edit.html' %}
+                    {% include '_account_other_user_infor.html' %}
+                    {% include '_account_receive_infor.html' %}
+                    <div class="col-md-offset-9 col-md-3"><button class="btn btn_blue btn_sm">Thay đổi</button> </div>
+                </div>
+            </div>
+            <div id="giaodich" class="tab-pane table-responsive">
+                {% include '_account_transaction.html' %}
+            </div>
+			<div id="balance" class="tab-pane table-responsive">
+                {% include '_account_plan.html' %}
+            </div>
+            </div>
+            <div style="clear: both"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
+{% block test%}{{translate('Đặt xe')}}{% endblock %}

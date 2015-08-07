@@ -1,0 +1,101 @@
+<script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+	
+	$(document).ready(function(){
+		$("#motchieu").click(function(){
+			$("#ngayve").attr("disabled",true);
+			$("#giove").attr("disabled",true);
+		});
+		$("#haichieu").click(function(){
+			$("#ngayve").attr("disabled",true);
+			$("#giove").attr("disabled",true);
+		});
+		$("#khuhoi").click(function(){
+			$("#ngayve").removeAttr("disabled");
+			$("#giove").removeAttr("disabled");
+		});
+		$('.book_noncheck').click(function(){
+			$('.book_check').removeClass('book_check').addClass('book_noncheck');
+			$(this).removeClass('book_noncheck').addClass('book_check');
+		});
+		$('input[type="checkbox"]').click(function(){
+			if($(this).attr("value")=="themdiachi1"){
+			$(".themdiachi1").toggle();
+		}
+		});
+		$('#addnewitem').click(function(){
+			$('#hienthiItem').append('  <div class="row"> <div class="col-md-11 col-sm-11 col-xs-11"> <label class="col-md-2 control-label box_sm">Địa chỉ</label>     <div class="col-md-10 box_xs"> <input type="text" class="form-control">        </div>  </div><div class="col-md-1 col-sm-1 col-xs-1 box_xs" id="addnewitem"><a><img src="img/btn_remove.png"></a><span id="hienthiItem"></span>  </div>  </div> ');
+		});
+		$('input[type="checkbox"]').click(function(){
+            if($(this).attr("value")=="dat_ho"){
+                $(".datho").toggle();
+            }
+        });
+        $('input[type="checkbox"]').click(function(){
+            if($(this).attr("value")=="hoadon"){
+                $(".hoadon").toggle();
+            }
+			if($(this).attr("value")=="balance"){
+				$(".balance_display").slideToggle(400);
+			}
+			if($(this).attr("value")=="dichvu1"){
+                $(".dichvu1").slideToggle(400);
+            }
+			if($(this).attr("value")=="dichvu2"){
+                $(".dichvu2").slideToggle(400);
+            }
+			if($(this).attr("value")=="dichvu3"){
+                $(".dichvu3").slideToggle(400);
+            }
+			if($(this).attr("value")=="booking_regularly"){
+                $("#show_booking_regularly").slideToggle(400);
+            }
+        });
+		$("#show_cost").click(function(){
+			$("#cost").slideToggle(400);		
+		});
+		$('input[type="checkbox"]').click(function(){
+				if($(this).attr("value")=="introduce_code"){
+					$("#customer_form_introduce_code").toggle();
+				}
+				if($(this).attr("value")=="discount_code"){
+					$("#customer_form_discount_code").toggle();
+				}
+			});	
+			$('input[type="radio"]').click(function(){
+					if($(this).attr("value")=="online_pay"){
+						$("#payment_form_online_pay_info").show();
+						$("#payment_form_transfer_pay_info").hide();
+						$("#payment_form_pay_back_info").hide();
+					}
+					if($(this).attr("value")=="transfer_pay"){
+						$("#payment_form_online_pay_info").hide();
+						$("#payment_form_transfer_pay_info").show();
+						$("#payment_form_pay_back_info").hide();
+					}
+					if($(this).attr("value")=="pay_back"){
+						$("#payment_form_online_pay_info").hide();
+						$("#payment_form_transfer_pay_info").hide();
+						$("#payment_form_pay_back_info").show();
+					}
+					if($(this).attr("value")=="balance"){
+						$(".balance_display").show(400);
+					}
+				});
+		$(".price_1").click(function(){
+			$(".show_price_1").slideToggle(400);		
+		});	
+		
+		$("#widget").click(function(){
+			$('#widget_popup').bPopup({
+			modalClose: true,
+            fadeSpeed: 'slow', //can be a string ('slow'/'fast') or int
+            followSpeed: 1500, //can be a string ('slow'/'fast') or int
+            modalColor: 'black'
+        });			
+		});
+	
+	});
+</script>

@@ -1,0 +1,44 @@
+.banner{
+    height: 440px;
+    background-image: url("../img/Spark-Taxi.jpg");
+    background-position: center;
+    position: relative;
+}
+.banner2{
+    height: 440px;
+    background-image: url("../img/business.jpg");
+    background-position: center;
+    position: relative;
+}
+.loidan{
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    bottom: 20px;
+    color: #fafafa;
+    padding-top: 10px;
+}
+.loiich{
+    text-align: center;
+}
+.box_outer{
+    min-height: 265px;
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,.3); /* outer glow */
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.3); /* outer glow */
+    box-shadow: 0 0 3px rgba(0,0,0,.3); /* outer glow */
+    padding: 10px;
+}
+.ic_content{
+    position: relative;
+}
+.ic_description{
+    position: relative;
+    top: 60px;
+}
+.ic_img{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .ic_description{
+        top: 0;
+    }
+}

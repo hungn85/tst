@@ -1,0 +1,77 @@
+{% extends "layout.html"%}
+{% block body %}
+<link href="css/blog.css" rel="stylesheet">
+	{% include '_blog_menu.html'%} 
+	<div class="box_xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row box_xs">
+						<div class="col-md-8">
+							<div class="input-group">
+							  <input type="text" class="form-control" placeholder="Tìm địa điểm">
+							  <span class="input-group-btn">
+								<button class="btn btn_orange" type="button">Tìm kiếm</button>
+							  </span>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<select class="form-control">
+								<option>Bài mới nhất</option>
+								<option>Bài xem nhiều nhất</option>
+							</select>
+						</div>
+					</div>
+					<div class="blog_bg">
+						<div class="col-md-12 box_xs">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="http://placehold.it/600x400" width="100%"/>
+								</div>
+								<div class="col-md-8">
+									<h4 class="text-uppercase"><a>Tiêu đề</a></h4>
+									<p class="text-uppercase"><small>Thứ 2, 22/6/2015</small></p>
+									<p>Disclaimer: considering the recent MERS outbreak, I’m not suggesting you jump on the next plane to Seoul... </p>
+									<p><a><span class="like_fb"></span></a> <a><span class="share_fb"></span></a><p>
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<hr/>
+						<div class="col-md-12 box_xs">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="http://placehold.it/600x400" width="100%"/>
+								</div>
+								<div class="col-md-8">
+									<h4 class="text-uppercase"><a>Tiêu đề</a></h4>
+									<p class="text-uppercase"><small>Thứ 2, 22/6/2015</small></p>
+									<p>Disclaimer: considering the recent MERS outbreak, I’m not suggesting you jump on the next plane to Seoul... </p>
+									<p><a><span class="like_fb"></span></a> <a><span class="share_fb"></span></a><p>
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<hr/>
+						<div class="col-md-12 box_xs">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="http://placehold.it/600x400" width="100%"/>
+								</div>
+								<div class="col-md-8">
+									<h4 class="text-uppercase"><a>Tiêu đề</a></h4>
+									<p class="text-uppercase"><small>Thứ 2, 22/6/2015</small></p>
+									<p>Disclaimer: considering the recent MERS outbreak, I’m not suggesting you jump on the next plane to Seoul... </p>
+									<p><a><span class="like_fb"></span></a> <a><span class="share_fb"></span></a><p>
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				{% include '_blog_recent.html'%} 
+			</div>
+		</div>
+	</div>
+{% endblock %} 
+{% block test%}Trang chủ{% endblock %}

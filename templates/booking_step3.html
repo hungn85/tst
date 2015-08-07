@@ -1,0 +1,44 @@
+{% extends "layout.html"%}
+{% block login_remind %}{% include '_booking_login_remind.html' %}{% endblock%}
+{% block booking_step %}{% include '_booking_step.html' %}{% endblock%}
+{% block body %}
+<div class="white_bg box_sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 style="text-align: center">Quý khách vui lòng kiểm tra thông tin phía dưới</h3>
+            </div>
+            {% include '_booking_step3_customer_info.html' %}
+            <div class="col-md-12 box_xs">
+				<a class="price_1">
+					<div class="price">
+						<h4>Hà Nội - Trong thành phố</h4>
+						<h3>200.000 Đ</h3>
+					</div>
+				</a>
+				<div class="show_price_1">			
+					{% include '_booking_step3_ticket_info.html' %}
+					{% include '_booking_step3_driver_info.html' %}
+				</div>			
+			</div>
+			<div class="col-md-12">
+				<hr/>
+				<div class="total_price">
+					<h4>Tổng thanh toán</h4>
+					<h3>200.000 Đ</h3>
+				</div>
+			</div>
+            <div class="col-md-12 box_md">
+                <h3 style="text-align: center">Cảm ơn quý khách đã sử dụng dịch vụ của dichung.vn</h3>				
+				<div class="col-md-offset-3 col-md-3 padding_top">
+					<a class="btn btn_blue">Đặt xe chiều về</a>
+				</div>
+				<div class="col-md-3 padding_top">
+					<a class="btn btn_orange">Đặt xe tại sân bay đến</a>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
+{% block test%}Đặt xe{% endblock %}

@@ -1,0 +1,101 @@
+
+<div class="row box_md">
+	<div class="col-md-12">
+		<h4 class="addition_text">{{translate('Thanh toán')}} <small><a href="">({{translate('Xem hướng dẫn')}})</a></small> </h4>
+		<div class="row box_xs">
+			<div class="col-md-6 padding_top">
+				<label for="customer_form_introduce_code_checkbox">
+					<input type="checkbox" name="customer_form[introduce_code_checkbox]" id="customer_form_introduce_code_checkbox" value="introduce_code"/>{{translate(' Tôi có mã giới thiệu')}}:
+				</label>
+				<input class="form-control" name="customer_form[introduce_code]"  id="customer_form_introduce_code">
+			</div>
+			<div class="col-md-6 padding_top">
+				<label for="customer_form_discount_code_checkbox">
+					<input type="checkbox" name="customer_form[discount_code_checkbox]" id="customer_form_discount_code_checkbox" value="discount_code"/>{{translate(' Tôi có mã giảm giá')}}:
+				</label>
+				<input class="form-control" name="customer_form[discount_code]"  id="customer_form_discount_code">
+			</div>
+		</div>
+		<hr/>
+		<div class="row box_xs">
+			<div class="col-md-4 col-ms-4 col-xs-4">
+				<label for="payment_form_online_pay">
+					<input type="radio" name="thanhtoan"  name="payment_form[online_pay]"  id="payment_form_online_pay" value="online_pay"/> Thanh toán online
+				</label>
+			</div>
+			<div class="col-md-4 col-ms-4 col-xs-4">
+				<label for="payment_form_transfer_pay">
+					<input type="radio" name="thanhtoan"  name="payment_form[transfer_pay]"  id="payment_form_transfer_pay" value="transfer_pay"/> Chuyển khoản
+				</label>
+			</div>
+			<div class="col-md-4 col-ms-4 col-xs-4">
+				<label for="payment_form_pay_back">
+					<input type="radio" name="thanhtoan"   name="payment_form[pay_back]"  id="payment_form_pay_back" value="pay_back"> Thanh toán sau
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12" id="payment_form_online_pay_info">
+		<h5>Quý khách đã lựa chọn hình thức thanh toán online </h5>		
+		<p>Quý khách có thể chuyển tiền vào tài khoản</p>
+		<table width="100%" class="text-center">
+			<tr>
+				<td>
+					<p>Số: 123456</p>
+					<p>Ngân hàng: Techcomback Hai Bà Trưng</p>
+					<p>Chủ tài khoản: Công ty cổ phần đi chung</p>
+				</td>
+				<td>
+					<p>Hoặc</p>
+				</td>
+				<td>
+					<p>Số: 123456</p>
+					<p>Ngân hàng: 12354</p>
+					<p>Chủ tài khoản: Công ty cổ phần đi chung</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="col-md-12" id="payment_form_transfer_pay_info">
+		<h5>Quý khách đã lựa chọn hình thức thanh toán chuyển khoản </h5>		
+		<p>Quý khách có thể chuyển tiền vào tài khoản</p>
+		<table width="100%" class="text-center">
+			<tr>
+				<td>
+					<p>Số: 123456</p>
+					<p>Ngân hàng: Techcomback Hai Bà Trưng</p>
+					<p>Chủ tài khoản: Công ty cổ phần đi chung</p>
+				</td>
+				<td>
+					<p>Hoặc</p>
+				</td>
+				<td>
+					<p>Số: 123456</p>
+					<p>Ngân hàng: 12354</p>
+					<p>Chủ tài khoản: Công ty cổ phần đi chung</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="col-md-12" id="payment_form_pay_back_info">
+		<h5>Quý khách đã lựa chọn hình thức thanh toán trả sau </h5>		
+		<p>Quý khách có thể chuyển tiền vào tài khoản</p>
+		<table width="100%" class="text-center">
+			<tr>
+				<td>
+					<p>Số: 123456</p>
+					<p>Ngân hàng: Techcomback Hai Bà Trưng</p>
+					<p>Chủ tài khoản: Công ty cổ phần đi chung</p>
+				</td>
+				<td>
+					<p>Hoặc</p>
+				</td>
+				<td>
+					<p>Số: 123456</p>
+					<p>Ngân hàng: 12354</p>
+					<p>Chủ tài khoản: Công ty cổ phần đi chung</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>

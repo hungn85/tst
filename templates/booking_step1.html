@@ -1,0 +1,29 @@
+{% extends "layout.html"%}
+{% block login_remind %}{% include '_booking_login_remind.html' %}{% endblock%}
+{% block booking_step %}{% include '_booking_step.html' %}{% endblock%}
+{% block body %}
+<div class="white_bg box_md">
+    <div class="container">
+		<div class="row">
+            <div class="col-md-6">
+			{% include '_booking_step1_booking_form.html' %}			
+            </div>
+            <div class="col-md-6">                
+			{% include '_booking_step1_map.html' %}
+            </div>
+        </div>
+        {% include '_booking_step1_selected_taxi.html' %}
+        {% include '_booking_step1_add_address.html' %}
+		{% include '_booking_step1_name_banner.html' %}
+        {% include '_booking_step1_airport_to.html' %}
+		{% include '_booking_step1_go_back.html' %}
+		{% include '_booking_step1_balance.html' %}
+        <div class="row">
+            <div class="col-md-offset-8 col-md-4">
+                <button class="btn btn_blue btn_lg">{{translate('Tiếp tục')}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
+{% block test%}{{translate('Đặt xe')}}{% endblock %}

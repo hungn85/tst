@@ -1,0 +1,19 @@
+<div class="row box_sm">	
+		{% include '_booking_step1_selected_classify.html' %}	
+	<div class="col-md-12">
+		<div class="showxe">
+			<ul class="nav nav-tabs showxe_tab">
+				<li class=" active"><a href="#dichung" data-toggle="tab">{{translate('Đi chung')}}</a></li>
+				<li><a href="#dirieng" data-toggle="tab">{{translate('Đi riêng')}}</a></li>			
+			</ul>
+			<div class="tab-content">
+				<div id="dichung" class="tab-pane active">
+					{% include '_booking_step1_selected_taxi_table.html' %}
+				</div>
+				<div id="dirieng" class="tab-pane">
+					{% include '_booking_step1_selected_taxi_table.html' %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

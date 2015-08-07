@@ -1,0 +1,37 @@
+<!-- Modal đăng kí -->
+<div class="modal fade" id="dangki" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">{{translate('Đăng kí')}}</h4>
+            </div>
+            <div class="modal-body dangnhap">
+                <div class="col-md-5 padding_top"><p>{{translate('Số điện thoại')}}</p></div>
+                <div class="col-md-7 padding_top"><input class="form-control"></div>
+                <div class="col-md-5 padding_top"><p>{{translate('Mật khẩu')}}</p></div>
+                <div class="col-md-7 padding_top"><input class="form-control"></div>
+                <div class="col-md-5 padding_top"><p>{{translate('Xác nhận mật khẩu')}}</p></div>
+                <div class="col-md-7 padding_top"><input class="form-control"></div>
+                <div class="col-md-offset-5 col-md-7 padding_top"><img src="http://placehold.it/100x50"></div>
+                <div class="col-md-5 padding_top"><p>{{translate('Nhập mã xác minh')}}</p></div>
+                <div class="col-md-4 padding_top"><input class="form-control"></div>
+                <div class="col-md-12 box_xs"><input type="checkbox"> {{translate('Tôi đồng ý với')}} <a>{{translate('chính sách sử dụng dịch vụ')}}</a> {{translate('và')}} <a>{{translate('chính sách bảo vệ quyền riêng tư')}}</a> {{translate('của dichung.vn')}}</div>
+                <div style="clear: both"></div>
+                <div class="col-md-5 box_sm"><hr/></div>
+                <div class="col-md-2 box_xs"><p style="text-align: center">{{translate('Hoặc')}}</p></div>
+                <div class="col-md-5 box_sm"><hr/></div>
+                <div class="col-md-12" style="text-align: center"><a><img src="img/loginfb.png"></a></div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="modal-footer">
+                <div class="col-md-offset-4 col-md-4">
+                    <button class="btn btn_blue btn_sm">{{translate('Đăng nhập')}}</button>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn_orange btn_sm">{{translate('Đăng kí')}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

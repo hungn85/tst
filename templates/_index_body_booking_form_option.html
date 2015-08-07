@@ -1,0 +1,84 @@
+						<div class="row">
+							<div class="col-md-3">
+								<div class="row">
+									<div class="col-md-6 col-xs-6 padding_top">
+										<select class="datxe_form-control" name="booking_form_{{fname}}[area]" id="booking_form_{{fname}}_area">
+											<option>{{translate('Tỉnh/Thành Phố')}}</option>
+											<option>Bà Rịa Vũng Tàu</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+									<div class="col-md-6 col-xs-6 padding_top" name="booking_form_{{fname}}[line]" id="booking_form_{{fname}}_line">
+										<select class="datxe_form-control">
+											<option>{{translate('Tuyến')}}</option>
+											<option>Trong thành phố</option>
+											<option>Liên tỉnh</option>
+											<option>Hà Nội - Nội Bài</option>
+											<option>Nội Bài - Hà Nội</option>
+											<option>Nội Bài - Tỉnh</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="row">
+									<div class="col-md-6 padding_top">
+										<input type="text" class="datxe_form-control" placeholder="{{translate('Địa chỉ đón khách')}}" name="booking_form_{{fname}}[pick_address]"  id="booking_form_{{fname}}_pick_address"/>
+									</div>
+									<div class="col-md-6 padding_top">
+										<input type="text" class="datxe_form-control" placeholder="{{translate('Địa chỉ trả khách')}}" name="booking_form_{{fname}}[to_address]"  id="booking_form_{{fname}}_to_address"/>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="row">
+									<div class="col-md-4 col-xs-6 padding_top">
+										<select class="datxe_form-control" name="booking_form_{{fname}}[type]" id="booking_form_{{fname}}_type">
+											<option>{{translate('Loại xe')}}</option>
+											<option>Xe 4 chỗ</option>
+											<option>Xe 7 chỗ</option>
+											<option>Xe 16 chỗ</option>
+										</select>
+									</div>
+									<div class="col-md-4 col-xs-6 padding_top">
+										<input type="text" class="datxe_form-control" placeholder="{{translate('Ngày')}}" name="booking_form_{{fname}}[to_address]"  id="booking_form_{{fname}}_to_address"/>
+									</div>
+									<div class="visible-xs" style="clear:both"></div>
+									<div class="col-md-4 padding_top">
+										<a class="btn btn_blue datxe_form-control" id="show_cost">Xem giá</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<select class="ways">
+									<option>Một chiều</option>
+									<option>Hai chiều</option>
+								</select>
+							</div>							
+							<div class="col-md-9 padding_top" id="cost">								
+								<div class="col-md-offset-2 col-md-2">
+									<div class="hidden-xs padding_top" style="clear:both"></div>
+									<h4>Chọn dịch vụ<h4>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-6 col-xs-6 suggest">
+											<h5 class="best">Đi riêng - rẻ nhất</h5>
+											<a class="btn btn_blue btn-sm">180.000Đ</a>
+										</div>
+										<div class="col-md-6 col-xs-6 suggest">
+											<h5 class="chip">Đi ghép - rẻ nhất</h5>
+											<a class="btn btn_orange btn-sm">120.000Đ</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 show_all">
+									<a>Xem tất cả</a>
+								</div>
+							</div>
+						</div>
+						
+						
+						

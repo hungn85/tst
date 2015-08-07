@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:700,400|Roboto+Slab' rel='stylesheet' type='text/css'>
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/main.css" rel="stylesheet">
+		<link href="/css/home.css" rel="stylesheet">
+		<link rel="stylesheet" href="/css/menu.css">
+		<link href="/css/full-slider.css" rel="stylesheet">
+
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<script src="/js/jquery-1.11.0.js"></script>
+		<script src="/js/menu_script.js"></script>
+		<script type='text/javascript' src='/js/quanli_script.js'></script>
+		<script type='text/javascript'  src='/js/popbox.js'></script>
+		<script src="/js/jquery.tabSlideOut.v1.3.js"></script>
+		<!-- jQuery Version 1.11.0 -->
+
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/bootstrap.js"></script>
+
+		<!-- Script to Activate the Carousel -->
+
+</head>
+
+	<body>
+		{% include '_header_adv.html' %}
+		{% include '_header_top.html' %}
+		{% include '_header_menu.html' %}
+		{% include '_js.html' %}
+		{% block login_remind %}{% endblock%}
+		{% block booking_step %}{% endblock%}
+		{% block body %}{% endblock%}
+		{% include '_invite_right_bar.html' %}
+		{% include '_footer.html' %}
+    </body>
+</html>

@@ -1,0 +1,24 @@
+{% extends "layout.html"%}
+
+{% block body %}
+    <link href="/css/home.css" rel="stylesheet">
+	<div class="banner">
+		<header id="myCarousel" class="carousel slide">
+			{% include '_index_body_slide.html' %}
+			 
+			{% include '_index_body_booking_form.html'  with {class: 'datxe'} %}
+		</header>		
+			<div class="slogan hidden-xs hidden-sm">
+				<h1>Taxi giá rẻ như xe khách</h1>
+			</div>
+	</div>
+	{% include '_index_body_booked.html' %}
+	{% include '_index_body_benefit.html' %}
+	{% include '_index_body_popular_place.html' %}
+	{% include '_index_body_stat.html' %}
+	{% include '_index_body_facebook.html' %}	
+	{% include '_index_body_invite_friend.html' %}
+
+
+{% endblock %} 
+{% block tag %}{% include '_index_body_tag.html' %}{% endblock%}

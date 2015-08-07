@@ -1,0 +1,22 @@
+{% extends "layout.html"%}
+{% block body %}
+<link href="/css/brand.css" rel="stylesheet">
+
+<div class="white_bg box_md">
+    <div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			<h4 class="addition_text">{{translate('Đặt xe tại sân bay đến')}}</h4>
+			</div>
+		</div>
+        {% include '_booking_step1_selected_taxi.html' %}
+        <div class="row padding_top">
+            <div class="col-md-offset-8 col-md-4">
+                <button class="btn btn_blue btn_lg">{{translate('Tiếp tục')}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% include '_brand_detail_modal.html' %}
+{% endblock %} 
+{% block test%}Đặt xe{% endblock %}

@@ -1,0 +1,23 @@
+	<form id="booking_form" method="post">
+		<div class="{{class}}">
+            <div class="tabbable">
+                <ul class="nav-tabs nav">
+                    <li class="active"><a href="#pane1" data-toggle="tab">{{translate('Đặt xe taxi')}}</a></li>
+                    <li class=""><a href="#pane2" data-toggle="tab">{{translate('Tuyến phổ biến')}}</a></li>
+                    <li class=""><a href="#pane3" data-toggle="tab">{{translate('Thuê xe trọn gói')}}</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="pane1" class="tab-pane active">
+                        {% include '_index_body_booking_form_option.html' with {fname: 'taxi'} %}
+                    </div>
+                    <div id="pane2" class="tab-pane">
+                        {% include '_index_body_booking_form_option.html' with {fname: 'popular'} %}
+                    </div>
+                    <div id="pane3" class="tab-pane">
+                        {% include '_index_body_booking_form_option.html' with {fname: 'rental'} %}
+                    </div>
+                </div>
+            </div>
+			<div class="clear"></div>
+        </div>
+	</form>

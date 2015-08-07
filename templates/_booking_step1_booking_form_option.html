@@ -1,0 +1,68 @@
+<div class="datxe2">
+						<div class="col-md-12 col-sm-12 padding_top">
+                            <select class="form-control" name="booking_form_{{fname}}[area]" id="booking_form_{{fname}}_area">
+								<option>{{translate('Tỉnh/Thành Phố')}}</option>
+								<option>Bà Rịa Vũng Tàu</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+                        <div class="col-md-12 col-sm-12 padding_top">
+                            <select class="form-control">
+								<option>{{translate('Tuyến')}}</option>
+								<option>Trong thành phố</option>
+								<option>Liên tỉnh</option>
+								<option>Hà Nội - Nội Bài</option>
+								<option>Nội Bài - Hà Nội</option>
+								<option>Nội Bài - Tỉnh</option>
+							</select>
+						</div>
+                        <div class="col-md-12 col-sm-12 padding_top">
+                            <input type="text" class="form-control" placeholder="{{translate('Địa chỉ đón khách')}}" name="booking_form_{{fname}}[pick_address]"  id="booking_form_{{fname}}_pick_address"/>
+                        </div>
+                        <div class="col-md-12 col-sm-12 padding_top">
+                            <input type="text" class="form-control" placeholder="{{translate('Địa chỉ trả khách')}}" name="booking_form_{{fname}}[to_address]"  id="booking_form_{{fname}}_to_address"/>
+                        </div>
+						<div class="col-md-6 col-sm-12 padding_top">
+                            <select class="form-control" name="booking_form_{{fname}}[type]" id="booking_form_{{fname}}_type">
+                                <option>{{translate('Loại xe')}}</option>
+                                <option>Xe 4 chỗ</option>
+                                <option>Xe 7 chỗ</option>
+                                <option>Xe 16 chỗ</option>
+                            </select>
+                        </div>						
+                        <div class="col-md-6 col-sm-6 padding_top">
+                            <input type="text" class="form-control" placeholder="{{translate('Ngày đi')}}" name="booking_form[day]"  id="booking_form_day"/>
+                        </div>
+                        <div class="col-md-12 col-sm-12 padding_top">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <label for="booking_form_dimension1">
+                                        <input type="radio" name="booking_form[dimension]" value="1" id="booking_form_dimension1"/>
+                                        {{translate('Một chiều')}}
+                                    </label>
+                                </div>
+                                <div class="col-md-6 col-xs-6">
+                                   <label for="booking_form_dimension2">
+                                        <input type="radio" name="booking_form[dimension]" value="2" id="booking_form_dimension2"/>
+                                        {{translate('Hai chiều')}}
+                                    </label>
+                                </div> 
+                            </div>
+                        </div>
+						<div style="clear:both"></div>
+						<div class="col-md-12"><hr/></div>
+						<!--<div class="col-md-offset-2 col-md-3 suggest">
+							<h5><a class="best">Tốt nhất</a></h5>
+							<a class="btn btn_blue_outline btn-sm">180.000Đ</a>
+						</div>
+						<div class="col-md-3 suggest">
+							<h5><a class="chip">Rẻ nhất</a></h5>
+							<a class="btn btn_orange_outline btn-sm">120.000Đ</a>
+						</div>-->
+                        <div class="col-md-offset-8 col-md-4 col-sm-4 padding_top">
+                            <button class="btn btn_sm btn_blue">{{translate('Đặt ngay')}}</button>
+                        </div>
+						<div style="clear: both"></div>
+</div>

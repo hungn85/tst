@@ -1,0 +1,39 @@
+{% extends "layout.html"%}
+{% block login_remind %}{% endblock%}
+{% block booking_step %}{% endblock%}
+{% block body %}
+<link href="css/khuyenmai.css" rel="stylesheet">
+<div class="white_bg box_sm">
+    <div class="container khuyenmai">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Nếu bạn là nhà cung cấp dịch vụ vận chuyển, nhấn vào <a>đây</a> để đăng tin khuyến mãi</p>
+            </div>
+            {% include '_promotion_find.html' %}
+        </div>
+        <div class="row box_sm">
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Điểm đi</th>
+                        <th>Điểm đến</th>
+                        <th>Giá chưa giảm</th>
+                        <th>Giá khuyến mại</th>
+                        <th>Ngày kết thúc</th>
+                        <th>Đặt xe</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>{% include '_promotion_show.html' %}</tr>
+                    <tr>{% include '_promotion_show.html' %}</tr>
+                    <tr>{% include '_promotion_show.html' %}</tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
+{% block test%}{{translate('Đặt xe')}}{% endblock %}

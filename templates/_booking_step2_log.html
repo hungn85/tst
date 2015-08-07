@@ -1,0 +1,47 @@
+<script>
+$(document).ready(function(){
+    $("#collapseOne").click(function(){
+        $("#collapseOneBody").slideToggle(300);
+    });
+});
+</script>
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingOne">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" id="collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+					  Hà Nội - Nội Bài
+					</a>
+					<a class="edit_trip"></a>
+				  </h4>
+				</div>
+				<div id="collapseOneBody" class="panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+						<div class="check_datxe">				
+							<h4>{{translate('Thông tin chuyến đi')}}</h4>
+							<p class="hightlight">Hà Nội - Trong thành phố</p>
+							<div class="row">
+								<div class="col-md-12">
+									<p>{{translate('Điểm đi')}}:</p>
+									<p>{{translate('Điểm đến')}}:</p>
+									<p>{{translate('Thời gian')}}:</p>
+								</div>
+								<div class="col-md-12">
+									<p>{{translate('Hãng')}}:</p>
+									<p>{{translate('Loại xe')}}:</p>
+									<p>{{translate('Số lượng')}}:</p>
+								</div>
+								<div class="col-md-12">
+									<p>{{translate('Một chiều')}}</p>
+									<p>{{translate('Hình thức')}}:</p>							
+									<p>{{translate('Địa chỉ đón thêm')}}:</p>
+								</div>
+							</div>
+							<hr/>
+							<h3 class="text-right">200.000 VNĐ</h3>
+							<div style="clear: both"></div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
